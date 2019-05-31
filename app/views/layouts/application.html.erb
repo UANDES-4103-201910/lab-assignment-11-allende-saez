@@ -11,10 +11,11 @@
   <body>
     <header>
       <ul class="hmenu">
-        <%= link_to('Home', :root) %>
-        <%= render 'devise/menu/registration_items' %>
-        <%= render 'devise/menu/login_items' %>
-        <%= render 'shopping_carts/shopping_cart' %>
+        <li><a <%= link_to('Home', :root) %>
+          <%= render 'devise/menu/registration_items' %>
+          <%= render 'devise/menu/login_items' %>
+          <%= render 'shopping_carts/shopping_cart' %>
+        </li>
       </ul>
       <p class="notice"><%= notice %></p>
       <p class="alert"><%= alert %></p>
